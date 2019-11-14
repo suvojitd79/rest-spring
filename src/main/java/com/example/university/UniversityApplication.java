@@ -13,17 +13,14 @@ public class UniversityApplication implements CommandLineRunner {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
-    @Autowired
-    private StudentRepository studentRepository;
 
     public static void main(String[] args) {
         SpringApplication.run(UniversityApplication.class, args);
     }
 
+
     @Override
     public void run(String... args) throws Exception {
-
-        logger.info(studentRepository.findAll() + "");
 
     }
 
